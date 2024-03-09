@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Valeta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ana Valeta</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Ana Valeta</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick=toggleMenu()">Sobre</a></li>
+                <li><a href="#experiencia" onclick=toggleMenu()">Experiência</a></li>
+                <li><a href="#projetos" onclick=toggleMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick=toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="perfil">
+        <div class="section__pic-container">
+            <img src="./assets/perfil.png" alt="foto de perfil da Ana">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Oie, eu sou a </p>
+            <h1 class="title"> Ana Valeta </h1>
+            <p class="section__text__p2"> Desenvolvedora Front-End</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('')"
+                > 
+                Download CV
+            </button>
+            <button 
+            class="btn btn-color-1" 
+            onclick="location.href= './#contato'"
+            > Infos de contato
+        </button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
